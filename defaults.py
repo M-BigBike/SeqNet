@@ -6,8 +6,12 @@ _C = CN()
 #                           Input                          #
 # -------------------------------------------------------- #
 _C.INPUT = CN()
-_C.INPUT.DATASET = "CUHK-SYSU"
-_C.INPUT.DATA_ROOT = "data/CUHK-SYSU"
+#----- FOR LOCAL PC -----#
+# _C.INPUT.DATASET = "CUHK-SYSU"
+# _C.INPUT.DATA_ROOT = "data/CUHK-SYSU"
+#----- FOR Kaggle -----#
+_C.INPUT.DATASET = "cuhk_sysu"
+_C.INPUT.DATA_ROOT = "kaggle/input/cuhk-sysu/cuhk_sysu"
 
 # Size of the smallest side of the image
 _C.INPUT.MIN_SIZE = 900
@@ -144,8 +148,8 @@ _C.DEVICE = "cuda"
 # Set seed to negative to fully randomize everything
 _C.SEED = 1
 # Directory where output files are written
-_C.OUTPUT_DIR = "./output"
-
+#_C.OUTPUT_DIR = "./output" # For local PC
+_C.OUTPUT_DIR = "./kaggle/working" # For Kaggle
 
 def get_default_cfg():
     """

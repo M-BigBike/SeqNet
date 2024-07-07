@@ -1,7 +1,8 @@
 OUTPUT_DIR: "./exp_prw"
 INPUT:
-  DATASET: "PRW"
-  DATA_ROOT: "data/PRW"
+  DATASET: "prw"
+  #DATA_ROOT: "data/PRW" #For local PC
+  DATA_ROOT: "kaggle/input/prw-personsearch/prw" #For Kaggle
 SOLVER:
   MAX_EPOCHS: 18
 MODEL:

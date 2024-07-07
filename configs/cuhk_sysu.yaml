@@ -1,7 +1,8 @@
 OUTPUT_DIR: "./exp_cuhk"
 INPUT:
-  DATASET: "CUHK-SYSU"
-  DATA_ROOT: "data/CUHK-SYSU"
+  DATASET: "cuhk_sysu"
+  #DATA_ROOT: "data/CUHK-SYSU" #For local PC
+  DATA_ROOT: "kaggle/input/cuhk-sysu/cuhk_sysu" #For Kaggle
 SOLVER:
   MAX_EPOCHS: 20
 MODEL:
